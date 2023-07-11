@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="samuellnogueira.com">
+    <title>Controle de Acesso - Line Online</title>
+    <link rel="shortcut icon" href="../../src/img/ICONES/icone_cobra_informatica.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- INCLUI HEADER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $("header").load("../../src/html/header.html");
+            $("footer").load("../../src/html/footer.html");
+        });
+    </script>
+
+    <!-- ENVIA E-MAIL COM O PROTOCOLO E POLÍTICAS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <section class="containerRegistroDeEntrada">
+        <!-- HEADER INSERIDO COM FUNÇÂO "INCLUI HEADER" -->
+        <header></header>
+        <h1>REGISTRO DE ENTRADA</h1>
+        <div class="dados">
+            <p>Preencha, todos os dados solicitados.</p>
+            <form action="" method="">
+                <div class="containerDados">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nomeUser" placeholder="Nome" required>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpfEntrada" id="cpfEntrada" placeholder="CPF" maxlength="14"
+                        autocomplete="off" required />
+                    <label for="empresa">Empresa</label>
+                    <input type="text" name="empresa" id="empresa" placeholder="Empresa">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" maxlength="15" placeholder="Telefone" required>
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+
+                <div class="containerDados">
+                    <span>Em caso de urgência e emergências,
+                        para quem devemos ligar?</span>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nomeUrgencia" id="nomeUrgencia" placeholder="Nome">
+                    <label for="telefoneUrgencia">Telefone</label>
+                    <input type="tel" name="telefoneUrgencia" id="telefoneUrgencia" maxlength="15"
+                        placeholder="Telefone">
+                </div>
+
+                <div class="containerDados">
+                    <p>Ao clicar em confirmar entrada, você declara estar ciente do protocolo de segurança e politicas
+                        internas da Cobra Informática.</p>
+                    <input type="submit" name="btnConfirmarEntrada" id="btnConfirmaEntrada" value="Confirmar Entrada">
+                </div>
+            </form>
+
+
+        </div>
+
+        <!-- FOOTER INSERIDO COM FUNÇÂO -->
+        <footer></footer>
+    </section>
+
+    <!-- MÁSCARA CPF E TELEFONE -->
+    <script src="../js/mascara_cpf.js"></script>
+    <script src="../js/mascara_tel.js"></script>
+
+    <!-- Módulos -->
+    <script type="module" src="../../scripts.js"></script>
+
+    <!-- Firebase -->
+    <script type="module" src="../js/firebase_config.js"></script>
+    
+    <!-- ENVIA E-MAIL COM O PROTOCOLO E POLÍTICAS -->
+    <script src="../../src/js/envia_email_com_protocolo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="samuellnogueira.com">
+    <title>Controle de Acesso - Line Online</title>
+    <!-- <meta http-equiv="refresh" content="86400"> -->
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <link rel="shortcut icon" href="./src/img/ICONES/icone_line_online.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <section class="conteudo">
+        <div class="info">
+            <h1 class="titulo">Olá, seja bem-vindo à<br>Line Online</h1>
+
+            <p>Registre sua entrada e saída em nossa empresa, para que possamos garantir sua segurança.</p>
+            <a href="./src/html/tela_de_cadastro.html" class="btnEntrada">registrar entrada</a>
+            <a class="btnSaida" href="./src/html/registro_de_saida.html">registrar saída</a>
+
+            <p>Prezamos pela segurança em primeiro lugar.<br>Leia atentamente nosso protocolo e politicas interna.</p>
+            <a href="./src/html/protocolo_e_politicas.html" id="btnProtocolos">PROTOCOlO E POLÍTICAS INTERNA</a>
+            <img class="logoCobra1" src="./src/img/LOGOS/logo_line_branco.svg" alt="">
+        </div>
+
+        <div class="rodape">
+            <img class="logoCobra" src="./src/img/LOGOS/logo_line_color.svg" alt="">
+            <a id="iconeRelatorio" href="./src/html/tela_de_login_evacuacao.html"><img src="./src/img/ICONES/icone_alerta.svg"
+                    alt=""></a>
+        </div>
+    </section>
+
+    <!-- ENVIA EMAIL MENSALMENTE -->
+    <script type="module" src="./src/js/relatorio_mensal.js"></script>
+    <script>localStorage.removeItem('token');</script>
+</body>
+
+</html>

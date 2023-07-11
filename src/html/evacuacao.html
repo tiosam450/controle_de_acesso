@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="samuellnogueira.com">
+    <title>Controle de Acesso - Line Online</title>
+    <link rel="shortcut icon" href="../../src/img/ICONES/icone_line_online.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- INCLUI HEADER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $("header").load("../../src/html/header.html");
+            $("footer").load("../../src/html/footer.html");
+        });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../../src/js/autenticacao_local.js"></script>
+</head>
+
+<body>
+    <section class="containerRelatorioEvacuacao">
+        <!-- HEADER INSERIDO COM FUNÇÂO "INCLUI HEADER" -->
+        <header></header>
+        <h1>EVACUAÇÃO DE EMERGÊNCIA</h1>
+        <div class="dadosEvacuacao">
+            <p>Esta é a lista de pessoas à serem evacuadas.<br>
+            Ao pressionar o botão Iniciar Evacuação, um e-mail será enviado para os administradores com a lista de evacuados.</p>
+            <form id="formRelatorioEvacuacao" action="" method="">
+                <label for="dataInicial">Data inicial</label>
+                <input type="date" name="dataInicialE" id="dataInicialE" />
+                <label for="dataFinalE">Data final</label>
+                <input type="date" name="dataFinalE" id="dataFinalE">
+                <input type="submit" name="btnImprimirEvacuacao" id="btnImprimirEvacuacao" value="Iniciar Evacuação">
+        </div>
+        </form>
+
+        <div id="tabelaEvacuacao">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>CPF</th>
+                        <th>EMPRESA</th>
+                        <th>TELEFONE</th>
+                        <th>E-MAIL</th>
+                        <th>NOME URGÊNCIA</th>
+                        <th>TELEFONE URGÊNCIA</th>
+                        <th>ENTRADA</th>
+                        <th>HORA</th>
+                        <th>SAÍDA</th>
+                        <th>HORA</th>
+                        <th>TIPO</th>
+                    </tr>
+                    <thead>
+                    <tbody>
+
+                    </tbody>
+            </table>
+        </div>
+
+        <!-- FOOTER INSERIDO COM FUNÇÂO -->
+        <footer></footer>
+    </section>
+
+    <!-- Módulos -->
+    <script type="module" src="../../scripts.js"></script>
+
+    <!-- Firebase -->
+    <script type="module" src="../js/firebase_config.js"></script>
+</body>
+
+</html>

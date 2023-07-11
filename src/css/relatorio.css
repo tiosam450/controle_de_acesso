@@ -1,0 +1,350 @@
+.containerRelatorio {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+
+}
+
+.containerRelatorio h1 {
+    margin: 6rem 0 0 0;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cinza);
+}
+
+.containerRelatorio {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: var(--bg);
+}
+
+.containerRelatorio h1 {
+
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--cinza);
+}
+
+.containerDados {
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerDados span {
+    color: var(--cinza);
+    text-align: center;
+}
+
+@media (max-width: 2560px) {
+    .containerDados {
+        width: 30%
+    }
+
+}
+
+@media (max-width: 1920px) {
+    .containerDados {
+        width: 40%
+    }
+
+}
+
+@media (max-width: 1366px) {
+    .containerDados {
+        width: 40%
+    }
+
+}
+
+@media (max-width: 900px) {
+    .containerDados {
+        width: 70%
+    }
+
+}
+
+.dados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#formRelatorio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    #formRelatorio {
+        flex-direction: column;
+    }
+}
+
+.dados p {
+    font-size: 1.1rem;
+    margin: 2rem 0 1.5rem 0;
+    text-align: center;
+}
+
+@media (max-width: 320px) {
+    .dados p {
+        font-size: .8rem;
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+    }
+}
+
+label {
+    font-size: .9rem;
+    margin: -.8rem 0;
+}
+
+.containerRelatorio input {
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    margin: 1.3rem;
+}
+
+input::placeholder {
+    opacity: .5;
+}
+
+#btnGerarRelatorio, #btnImprimir, #btnImprimirEvacuacao{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5rem 2rem;
+    color: white;
+    background: var(--vermelho);
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+    border-radius: 8px;
+}
+
+#btnGerarRelatorio:hover, #btnImprimir:hover, #btnImprimirEvacuacao:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+
+.containerRelatorio footer {
+    width: 100%;
+}
+
+.containerRelatorio footer img {
+    width: 150px;
+    margin: 4rem 0 2rem;
+}
+
+
+@media (max-width: 500px) {
+    .containerRelatorio footer p {
+        font-size: .6rem;
+    }
+}
+
+/* TABELA */
+#tabela {
+    width: 100%;
+}
+
+table {
+    position: relative;
+    width: 90%;
+    border-spacing: 1;
+    border-collapse: collapse;
+    border-radius: 6px;
+    margin: 0 auto;
+    background: white;
+}
+
+table * {
+    position: relative;
+}
+
+table td,
+table th {
+    padding: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table thead tr {
+    background: rgb(195, 226, 252);
+}
+
+table th {
+    font-size: .9rem;
+}
+
+table td {
+    font-size: .7rem;
+}
+
+table thead th:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+table thead th:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #e3f1d5;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td,
+table th {
+    text-align: left;
+}
+
+table td.l,
+table th.l {
+    text-align: right;
+}
+
+table td.c,
+table th.c {
+    text-align: center;
+}
+
+table td.r,
+table th.r {
+    text-align: center;
+}
+
+@media (max-width: 1366px) {
+
+    td,
+    tr {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1125px) {
+
+    td,
+    tr {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    td,
+    tr {
+        font-size: .8rem;
+    }
+
+    table {
+        display: block;
+    }
+
+    table>*,
+    table tr,
+    table td,
+    table th {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: .5rem 1rem;
+    }
+
+    table tbody tr td {
+        padding-left: 45%;
+        /* margin-bottom: 12px; */
+    }
+
+    table tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+
+    table td,
+    table th {
+        padding: .2rem .5rem;
+    }
+
+    table tbody tr td:before {
+        position: absolute;
+        font-weight: 700;
+        width: 40%;
+        left: 10px;
+        top: 0;
+    }
+
+    table tbody tr td:nth-child(1):before {
+        content: "NOME";
+    }
+
+    table tbody tr td:nth-child(2):before {
+        content: "CPF";
+    }
+
+    table tbody tr td:nth-child(3):before {
+        content: "EMPRESA";
+    }
+
+    table tbody tr td:nth-child(4):before {
+        content: "TELEFONE";
+    }
+
+    table tbody tr td:nth-child(5):before {
+        content: "E-MAIL";
+    }
+
+    table tbody tr td:nth-child(6):before {
+        content: "NOME URGÊNCIA";
+    }
+
+    table tbody tr td:nth-child(7):before {
+        content: "TELEFONE URGÊNCIA";
+    }
+
+    table tbody tr td:nth-child(8):before {
+        content: "ENTRADA";
+    }
+
+    table tbody tr td:nth-child(9):before {
+        content: "HORA";
+    }
+    table tbody tr td:nth-child(10):before {
+        content: "SAÍDA";
+    }
+
+    table tbody tr td:nth-child(11):before {
+        content: "HORA";
+    }
+}

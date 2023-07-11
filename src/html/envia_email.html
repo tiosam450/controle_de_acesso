@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<head>
+  <title>Sending Mail</title>
+</head>
+  
+<body>
+  <form method="post">
+    <input type="button" id="botao" value="Send Mail"/>
+  </form>
+  <script type="text/javascript">
+    const botao = document.querySelector('#botao')
+    function sendEmail() {
+      
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "samuel.artefinal@gmail.com",
+        Password: "9E2BDFAA701C53BEAA60F9D0F81ADBF8DCE5",
+        To: 'tiosam450@hotmail.com',
+        From: "controledeacesso@cobrainformatica.com",
+        Subject: "Entrada Confirmada - Cobra Informática",
+        Body: "Baixe o arquivo anexo e leia atentamente nosso Protocolo e Políticas de Acesso.",
+        Attachments : [
+          {
+            name : "Protocolo e Políticas de Acesso",
+            path : "https://cobrainformatica.com/controledeacesso/src/download/protocolo_e_politica_controle_de_acesso_cobra_informatica.pdf"
+          }]
+      })
+        .then(function (message) {
+          alert("Você recebera um e-mail com nosso Protocolo e Políticas de Acesso")
+        });
+    }
+
+    botao.addEventListener('click', sendEmail)
+  </script>
+</body>
+  
+</html> 

@@ -1,0 +1,35 @@
+:root {
+    --azul: #410897;
+    --vermelho: #E74E50;
+    --verde: #acff7a;
+    --azulClaro: #A79AE9;
+    --cinza: #484B4D;
+    --bg: #E8F6FF;
+    /* --bg: #FBF5FF; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+html, body {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.active {
+    display: initial;
+}
+
+.none {
+    display: none;
+}

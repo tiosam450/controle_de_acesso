@@ -1,0 +1,508 @@
+.conteudo {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 50% 50% 1fr;
+    place-items: center;
+    padding: 2rem 2rem 0;
+    width: 100%;
+    height: 100vh;
+    /* background: rgb(51,133,184); */
+    background: linear-gradient(210deg, rgba(51,133,184,1) 0%, rgba(60,45,182,1) 42%, rgba(72,18,158,1) 75%, rgba(146,49,190,1) 92%);
+    overflow: hidden;
+}
+
+.info{
+    height: 100%;
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+.rodape{
+    grid-column: 2/3 ;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-items: center;
+    background: url(../../src/img/FOTOS/foto_home_desk.png) no-repeat;
+    background-size:contain;
+    background-position: right bottom;
+}
+
+.rodape p{
+    position: absolute;
+    grid-column: 2/3 ;
+    grid-row: 1;
+    right: 0;
+    bottom: 4.3;
+}
+
+.conteudo .titulo {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 0 4rem;
+    color: white;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.conteudo p {
+    font-size: 1rem;
+    line-height: 1.3em;
+    margin: .5rem 0;
+    text-align: center;
+    color: white;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.conteudo a{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 100%;
+    border-radius: 8px;
+    margin: .5rem auto;
+    transition: .2s ease-in-out all;
+    cursor: pointer;
+}
+
+#btnSaida{
+    margin-bottom: 2rem;
+}
+
+.conteudo a:hover{
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+#btnEntrada{
+    background: #acff7a;
+    color: var(--azul);
+    margin: 2rem 0 1rem 0;
+}
+
+#btnSaida{
+    background: #e64e4e;
+    color: white;
+    margin: 0 0 2rem 0;
+}
+
+#btnProtocolos{
+    font-size: 2rem;
+    background: #d2d2d2;
+    color: #494949;
+    margin: 0 0 .5rem 0;
+}
+
+.logoCobra1{
+    position: absolute;
+    bottom: 1rem;
+    grid-column: 3/4;
+    max-width: 150px;
+    margin: 4rem 0 0 0;
+    z-index: 1;
+}
+
+.logoCobra{
+    display: none;
+    position: absolute;
+    bottom: 4.3rem;
+    grid-column: 3/4;
+    max-width: 150px;
+    margin: 4rem 0 0 0;
+    z-index: 1;
+}
+
+#iconeRelatorio{
+    grid-column: 3/3;
+    position: absolute;
+    bottom: 4.3rem;
+    right: 0;
+    margin: 0 1rem 0;
+    padding: 0;
+    max-width: 120px;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+    z-index: 10;
+}
+
+#iconeRelatorio:hover{
+    transform: scale(1.1);
+}
+
+@media ((min-width: 1365px) and (max-width: 1366px)) {
+    .conteudo {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 40% 40% 1fr;
+        place-items: center;
+        padding: 2rem 2rem 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(180deg, #e8f6ff 53%, #5a8dd3 85%);
+        overflow: hidden;
+    }
+    
+    .info{
+        height: 100%;
+        position: relative;
+        grid-column: 3/4;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-self: start;
+        margin-top: -100px;
+        z-index: 1;
+    }
+    
+    .rodape{
+        grid-column: 2/3 ;
+        grid-row: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-items: center;
+        background: url(../../src/img/FOTOS/foto_home_desk.png) no-repeat;
+        background-size:contain;
+        background-position: left bottom;
+    }
+
+    .conteudo .titulo {
+        font-size: 2rem;
+        margin: 0 0 1rem;
+    }
+    
+    .conteudo p {
+        font-size: 1rem;
+        line-height: 1.3em;
+    }
+    
+    .conteudo a{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem 3rem;
+        margin: .5rem auto;
+    }
+
+    #btnProtocolos{
+        font-size: 1.2rem;
+    }
+    
+    #btnSaida{
+        font-size: 1.2!important;
+    }
+
+    .logoCobra1{
+        position: absolute;
+        bottom: 0rem;
+        grid-column: 3/4;
+        max-width: 120px;
+        margin: 2rem 0 0 0;
+        z-index: 1;
+    }
+    
+    .logoCobra{
+        display: none;
+        position: absolute;
+        bottom: 4.3rem;
+        grid-column: 3/4;
+        max-width: 90px;
+        margin: 4rem 0 0 0;
+        z-index: 1;
+    }
+    
+    #iconeRelatorio{
+        grid-column: 3/3;
+        position: absolute;
+        bottom: 3rem;
+        right: 0;
+        margin: 0 1rem 0;
+        padding: 0;
+        max-width: 70px;
+        cursor: pointer;
+        transition: .2s ease-in-out all;
+        z-index: 10;
+    }
+}
+
+@media ((min-width: 768px) and (max-width: 1365px)) {
+    .conteudo {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: 60% 1fr;
+        padding: 1rem 0 0 0;
+        place-items: center;
+    }
+
+    .info{
+        width: 100%;
+        padding: 0 0 0 0;
+        grid-column: 2/3;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-self: center;
+        margin-top: 0;
+    }
+
+    .conteudo .titulo {
+        font-size: 2.5rem;
+        margin: 0 0 5rem;
+    }
+
+    .conteudo p {
+        font-size: 1rem;
+        line-height: 1.3em;
+        margin: .5rem 0;
+    }
+
+    .conteudo a{
+        font-size: 2rem;
+        text-align: center;
+        padding: .7rem 1rem;
+        font-weight: 900;
+        margin: .5rem auto;
+    }
+
+    #btnProtocolos{
+        font-size: 1.6rem;
+        background: #d2d2d2;
+        color: #494949;
+        margin: 0 0 .5rem 0;
+    }
+
+    .rodape{
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-items: center;
+        background: url(../../src/img/FOTOS/foto_home.png) no-repeat;
+        background-size:contain;
+        background-position: center bottom;
+    }
+
+    .logoCobra{
+        display: initial;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .logoCobra1{
+        display: none;
+    }
+
+    #iconeRelatorio{
+        position: absolute;
+        width: 110px;
+        bottom: 30px;
+        right: 0;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+}
+
+@media ((min-width: 330px) and (max-width: 767px)) {
+    .conteudo {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: 60% 1fr;
+        padding: 1rem 0 0;
+        place-items: center;
+    }
+
+    .info{
+        padding: 0 0 0 0;
+        grid-column: 2/3;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-self: center;
+        margin-top: 0;
+    }
+
+    .conteudo .titulo {
+        font-size: 1.6rem;
+        margin: 0 0 1.5rem;
+    }
+
+    .conteudo p {
+        font-size: .7rem;
+        line-height: 1.3em;
+    }
+
+    .conteudo a{
+        font-size: 1.3rem;
+        text-align: center;
+        padding: .7rem 1rem;
+        font-weight: 900;
+        margin: .5rem auto;
+    }
+
+    #btnProtocolos{
+        font-size: .9rem;
+        background: #d2d2d2;
+        color: #494949;
+        margin: 0 0 .5rem 0;
+    }
+
+    .rodape{
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-items: center;
+        background: url(../../src/img/FOTOS/foto_home.png) no-repeat;
+        background-size:contain;
+        background-position: center bottom;
+    }
+
+    .logoCobra{
+        display: initial;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .logoCobra1{
+        display: none;
+    }
+
+    #iconeRelatorio{
+        position: absolute;
+        width: 55px;
+        bottom: 30px;
+        right: 0;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .conteudo {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: 60% 1fr;
+        padding: 1rem 0 0;
+        place-items: center;
+    }
+
+    .info{
+        padding: 100px 0 0 0;
+        grid-column: 2/3;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-self: start;
+        margin-top: 0;
+    }
+
+    .conteudo .titulo {
+        font-size: 1.6rem;
+        margin: 0 0 1.5rem;
+    }
+
+    .conteudo p {
+        font-size: .7rem;
+        line-height: 1.3em;
+    }
+
+    .conteudo a{
+        font-size: 1.3rem;
+        text-align: center;
+        padding: .7rem 1rem;
+        font-weight: 900;
+        margin: .5rem auto;
+    }
+
+    #btnProtocolos{
+        font-size: .9rem;
+        background: #d2d2d2;
+        color: #494949;
+        margin: 0 0 .5rem 0;
+    }
+
+    .rodape{
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-items: center;
+        background: none;
+        background-size:contain;
+        background-position: center bottom;
+    }
+
+    .fotoHome{
+        display: none;
+    }
+
+    .logoCobra{
+        display: initial;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .logoCobra1{
+        display: none;
+    }
+
+    #iconeRelatorio{
+        position: absolute;
+        width: 40px;
+        bottom: 30px;
+        right: 0;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+}

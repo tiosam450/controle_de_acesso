@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="samuellnogueira.com">
+    <title>Controle de Acesso - Line Online</title>
+    <link rel="shortcut icon" href="../../src/img/ICONES/icone_line_online.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/7aa73bb9b6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../src/css/login_evacuacao.css">
+
+    <!-- INCLUI HEADER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $("header").load("../../src/html/header.html");
+            $("footer").load("../../src/html/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <!-- HEADER INSERIDO COM FUNÇÂO "INCLUI HEADER" -->
+    <header></header>
+    <section class="containerLogin">
+        <div class="CardLogin">
+            <div>
+                <h1>Digite a senha de<br>brigadista para entrar</h1>
+            </div>
+
+            <div class="camposLogin">
+                <img src="../../src/img/ICONES/icone_senha.svg" alt="">
+                <input type="password" id="senha" placeholder="Senha" required>
+                <i class="fa fa-eye"></i>
+            </div>
+
+            <button id="btnLogin" type="submit">Entrar</button>
+        </div>
+    </section>
+
+    <script src="../../src/js/autenticação.js"></script>
+    <script src="../../src/js/login.js"></script>
+    
+</body>
+
+</html>

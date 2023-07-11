@@ -1,0 +1,544 @@
+.containerSecao {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+}
+
+.containerSecaoBg {
+    position: relative;
+    width: 100%;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    place-content: center;
+    background: var(--bg);
+}
+
+@media (min-width: 1366px) {
+    .containerSecao {
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .containerSecaoBg {
+        grid-template-columns: 1fr 60% 1fr;
+    }
+}
+
+@media (min-width: 1380px) {
+    .containerSecao {
+        grid-template-columns: 1fr 40% 1fr;
+    }
+
+    .containerSecaoBg {
+        grid-template-columns: 1fr 40% 1fr;
+    }
+}
+
+@media (min-width: 1500px) {
+    .containerSecao {
+        grid-template-columns: 1fr 40% 1fr;
+    }
+
+    .containerSecaoBg {
+        grid-template-columns: 1fr 40% 1fr;
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url(../../src/img/BANNER/banner_protocolo_e_politicas_2560x1080px.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.fotoBanner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoBanner h1{
+    position: absolute;
+    bottom: 0;
+    margin: 0 2rem 10rem;
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+}
+
+#logoCobra1{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
+    width: 200px;
+}
+
+@media (max-width: 1366px) {
+    .fotoBanner h1{
+        position: absolute;
+        bottom: 0;
+        margin: 0 2rem 10rem;
+        font-size: 4rem;
+        text-align: center;
+        color: white;
+    }
+    
+    #logoCobra1{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 3rem;
+        width: 150px;
+    }
+}
+
+@media (max-width: 950px) {
+    .fotoBanner h1{
+        position: absolute;
+        bottom: 0;
+        margin: 0 2rem 10rem;
+        font-size: 3rem;
+        text-align: center;
+        color: white;
+    }
+    
+    #logoCobra1{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 3rem;
+        width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .fotoBanner h1{
+        position: absolute;
+        bottom: 0;
+        margin: 0 2rem 8rem;
+        font-size: 2.3rem;
+        text-align: center;
+        color: white;
+    }
+    
+    #logoCobra1{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4.5rem;
+        width: 100px;
+    }
+}
+
+.secao1, .secao2, .secao3, .secao4, .secao5, .secao6, .secao7 {
+    grid-column: 2;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    padding: 6rem 0;
+}
+
+.secao1 {
+    padding: 8rem 0 4rem;
+}
+
+.titulo {
+    font-size: 3.3rem;
+    font-weight: 900;
+    margin: 0 0 2rem;
+    color: var(--azul);
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    color: var(--cinza);
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+@media (max-width: 500px) {
+    .titulo {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+}
+
+.galeria1 {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
+    margin: 50px 0;
+    gap: 40px
+}
+
+.galeria1 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card .itens {
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.galeria2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(100px, 150px), 1fr;
+    margin: 50px 0;
+    gap: 40px
+}
+
+.galeria2:last-child {
+    margin: 50px 0 0;
+}
+
+.galeria2 .card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.galeria2 .card .itens {
+    max-width: 160px;
+    min-width: 160px;
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 500px) {
+    .galeria2 .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .galeria2 .card .itens {
+        max-width: 150px;
+        min-width: 150px;
+        display: grid;
+        place-items: center;
+    }
+}
+
+span {
+    color: var(--azul);
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+
+.galeria3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    place-content: center;
+    margin: 50px 0;
+    gap: 40px;
+}
+
+@media (min-width: 1366px) {
+    .galeria3 {
+        grid-template-columns: repeat(2, minmax(100px, 200px));
+        justify-content: start;
+    }
+}
+
+.galeria3 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeria3 .card .itens {
+    max-width: 150px;
+    min-width: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.galeria3 .card a {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 5px 30px;
+    border-radius: 8px;
+    color: white;
+    background: var(--azul);
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.galeria3 .card a:hover {
+    transform: scale(1.03);
+    background: #2f55bd;
+}
+
+.foto {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tituloSecao4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.seloGPTW {
+    align-self: start;
+    max-width: 130px;
+    margin: -6rem 4rem 2rem;
+    object-fit: contain;
+}
+
+@media (max-width: 500px) {
+    .seloGPTW {
+        align-self: start;
+        max-width: 90px;
+        margin: -6rem 1rem 2rem;
+        object-fit: contain;
+    }
+
+}
+
+.fotoPessoas {
+    grid-column: 1/4;
+    bottom: 0;
+    width: 100%;
+    margin: -10rem 0 0 0;
+}
+
+.secao4 a {
+    width: fit-content;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 5px 30px;
+    border-radius: 8px;
+    color: white;
+    background: var(--azul);
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+    z-index: 1;
+}
+
+.secao4 a:hover {
+    transform: scale(1.03);
+    background: #2f55bd;
+}
+
+.containerSecaoBgFoto {
+    position: relative;
+    width: 100%;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    place-content: center;
+    background: url(../img/FOTOS/tela_onu.jpg) no-repeat;
+    background-position: 0% 70%;
+    background-size: cover;
+}
+
+.secao5 {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tituloSecao5 h1,
+.tituloSecao5 p {
+    color: white;
+}
+
+.secao5 .assinatura {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secao5 a {
+    width: fit-content;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 5px 30px;
+    border-radius: 8px;
+    color: white;
+    background: var(--azul);
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.secao5 a:hover {
+    transform: scale(1.03);
+    background: #2f55bd;
+}
+
+.secao5 .assinatura img {
+    max-width: 200px;
+    object-fit: fill;
+}
+
+
+@media (min-width: 1020px) {
+    .containerSecaoBgFoto {
+        background: url(../img/FOTOS/tela_onu_2560x1080px.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .tituloSecao5 h1 {
+        max-width: 40%;
+        color: white;
+    }
+
+    .tituloSecao5 p {
+        max-width: 30%;
+        color: white;
+    }
+
+    .secao5 .assinatura {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .secao5 a {
+        width: fit-content;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .secao5 .assinatura img {
+        max-width: 300px;
+        object-fit: fill;
+    }
+
+}
+
+@media (min-width: 1380px) {
+    .secao5 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .secao5 .assinatura img {
+        position: absolute;
+        bottom: 0;
+        max-width: 300px;
+        object-fit: fill;
+        margin: 4rem 0;
+    }
+}
+
+.sesao6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoSecao6 {
+    margin: 0 auto 4rem;
+    max-width: 700px;
+}
+
+.galeria4 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    place-content: center;
+    margin: 50px 0;
+    gap: 40px;
+}
+
+@media (min-width: 1366px) {
+    .galeria4 {
+        grid-template-columns: repeat(3, minmax(100px, 200px));
+    }
+}
+
+.galeria4 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.galeria4 .card .itens img {
+    max-height: 80px;
+}
+
+footer {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    max-width: 250px;
+    margin: 0 0 4rem;
+}
+
+footer div {
+    width: 100%;
+    text-align: center;
+    background: var(--azul);
+}
+
+footer p {
+    color: white;
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+@media ((min-width: 330px) and (max-width: 767px)) {
+    footer img {
+        max-width: 100px;
+        margin: 0 0 1rem;
+    }
+
+    footer p {
+        color: white;
+        font-size: .7rem;
+        padding: 1rem;
+    }
+    
+}

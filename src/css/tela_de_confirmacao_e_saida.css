@@ -1,0 +1,66 @@
+.telaConfirmacao{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+}
+
+.textoTelaConfirmacao{
+    justify-self: center;
+    padding: 1rem;
+}
+
+.telaConfirmacao h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--cinza);
+}
+
+.telaConfirmacao h2{
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--azul);
+    margin-bottom: 2rem;
+}
+
+.telaConfirmacao footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.telaConfirmacao footer p{
+    font-size: .8rem;
+}
+
+.telaConfirmacao footer img{
+    width: 150px;
+    margin: 0 0 2rem;
+}
+
+@media (max-width: 500px) {
+    .telaConfirmacao h1{
+        font-size: 2rem;
+    }
+    
+    .telaConfirmacao h2{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .telaConfirmacao footer p{
+        font-size: .6rem;
+    }
+
+    .telaConfirmacao footer img{
+        width: 130px;
+        margin: 0 0 1.6rem;
+    }
+}

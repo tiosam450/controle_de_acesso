@@ -1,0 +1,74 @@
+/* CABEÇALHO */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: var(--azul);
+    z-index: 10;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 2rem;
+}
+
+#logoCobra img {
+    max-width: 110px;
+    min-width: 100px;
+}
+
+#iconeVoltar img {
+    max-width: 30px;
+    min-width: 20px;
+    filter: invert();
+}
+
+@media ((min-width: 330px) and (max-width: 767px)) {
+    header {
+        height: 40px;
+    }
+    
+    header a {
+        height: 100%;
+        margin: 0 2rem;
+    }
+    
+    #logoCobra img {
+        max-width: 70px;
+        min-width: 70px;
+    }
+    
+    #iconeVoltar img {
+        max-width: 20px;
+        min-width: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        height: 40px;
+    }
+    
+    header a {
+        height: 100%;
+        margin: 0 2rem;
+    }
+    
+    #logoCobra img {
+        max-width: 70px;
+        min-width: 70px;
+    }
+    
+    #iconeVoltar img {
+        max-width: 20px;
+        min-width: 10px;
+    }
+}

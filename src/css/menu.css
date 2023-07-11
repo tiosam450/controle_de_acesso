@@ -1,0 +1,82 @@
+/* MENU */
+nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 50px;
+    margin: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100%;
+    height: 100vh;
+    background: #410897;
+    z-index: 5;
+}
+
+.preAnime {
+    animation: entrada .2s forwards;
+}
+
+.saida {
+    animation: saida .2s forwards;
+}
+
+@keyframes entrada {
+    0% {
+        left: -100vw;
+    }
+
+    100% {
+        left: 0vw;
+    }
+}
+
+@keyframes saida {
+    0% {
+        left: 0vw;
+    }
+
+    100% {
+        left: -100vw;
+    }
+}
+
+.itensMenu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.itensMenu li {
+    list-style: none;
+    padding: .8rem 0;
+    transition: .2s ease-in-out all;
+    margin: 0 2rem;
+}
+
+.itensMenu a {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #e8f6ff93;
+
+}
+
+.itensMenu li:hover {
+    transform: scale(1.03);
+}
+
+.itensMenu li a:hover {
+    color: white;
+    transform: scale(1.03);
+}
+
