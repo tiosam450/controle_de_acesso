@@ -95,9 +95,9 @@ export const consultaEvacuacao = () => {
         function enviaEmailEvacuacao() {
             Email.send({
                 Host: "smtp.elasticemail.com",
-                Username: "lineonlinebr1@gmail.com",
-                Password: "6EF41FD1235F7E34624DCABAEF8DC596299C",
-                To: "tiosam450@hotmail.com; renan@cobrainformatica.com; marina@cobrainformatica.com; renali@lineonline.com.br; denis@lineonline.com.br",
+                Username: "",
+                Password: "",
+                To: "",
                 From: "protocolo@lineonline.com.br",
                 Subject: "Relatorio de Evacuação - Line Online",
                 Body: textoEmail,
