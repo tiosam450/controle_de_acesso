@@ -19,10 +19,10 @@ function sendEmail() {
         botao.setAttribute('value', 'Registrando entrada...')
         Email.send({
             Host: "smtp.elasticemail.com",
-            Username: "lineonlinebr1@gmail.com",
-            Password: "6EF41FD1235F7E34624DCABAEF8DC596299C",
+            Username: "",
+            Password: "",
             To: endEmail,
-            From: "protocolo@lineonline.com.br",
+            From: "",
             Subject: "Entrada Confirmada - Line Online",
             Body: corpoEmail,
             Attachments: [
